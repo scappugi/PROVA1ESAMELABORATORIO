@@ -18,10 +18,16 @@ public:
         this->nomeLista=nomeLista;}
 
     void AddListToDo(Nota *nota);
+    void removeToList(Nota *nota);
+    void removeAndDestroyNote(Nota *nota);
+    virtual void subscribe(Observer *o);
+    virtual void unsubscribe(Observer *o);
+    virtual void notify();
     virtual ~CollezioneNote();
 
 private:
     list<Nota *> listaToDo;
+    Observer *observer;
     string nomeLista;
 };
 
