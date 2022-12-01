@@ -4,10 +4,14 @@
 
 #ifndef PROVA1ESAMELABORATORIO_NOTA_H
 #define PROVA1ESAMELABORATORIO_NOTA_H
-
+#include <string>
+using namespace  std;
 
 class Nota {
-
+    string nomeNota;
+    string descrizioneNota;
+    bool blocco;
+    bool priorita;
 };
 
 
