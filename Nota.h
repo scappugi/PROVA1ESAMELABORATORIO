@@ -8,6 +8,7 @@
 using namespace  std;
 
 class Nota {
+private:
     string nomeNota;
     string descrizioneNota;
     bool bloccoModificaCancellazione;

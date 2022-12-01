@@ -7,21 +7,16 @@
 
 #include "Nota.h"
 #include "list"
-
+#include "iostream"
 
 using namespace std;
 
-class CollezioneNote{
+class CollezioneNote {
 private:
     list<Nota *> listaToDo;
 
-public: void AddListToDo(Nota *nota){
-        if (nota->isInseritoInUnaLista()==0)
-        {
-            nota->setInseritoInUnaLista(1); //controllo che non sia già stato inserito in un altra lista
-
-        }
-    }
+public:
+    void AddListToDo(Nota *nota);
 };
 
 
