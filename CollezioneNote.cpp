@@ -21,6 +21,7 @@ void CollezioneNote::removeAndDestroyNote(Nota *nota) {
     listaToDo.remove(nota);
     nota->setInseritoInUnaLista(0); //permette alla nota di essere riserita in una lista
     delete nota; //elimina il puntatore nota.
+    notify();
 }
 
 void CollezioneNote::subscribe(Observer *o) {
@@ -29,4 +30,9 @@ void CollezioneNote::subscribe(Observer *o) {
 
 void CollezioneNote::unsubscribe(Observer *o) {
     this->observer= nullptr; //tolto l' observer
+}
+
+void CollezioneNote::notify() {
+
+    observer->update(listaToDo.size());
 }
