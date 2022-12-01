@@ -8,13 +8,20 @@
 
 #include "Nota.h"
 #include "list"
+#include "Subject.h"
 
-class CollezioneNoteImportanti {
+class CollezioneNoteImportanti:public Subject{
+public:
+    CollezioneNoteImportanti(string nomeLista){
+        this->nomeLista=nomeLista;
+    }
+
+    void AddListToDoImportanti(Nota *nota);
+    virtual ~CollezioneNoteImportanti();
+
 private:
     list<Nota *> listaToDoImportanti;
-
-public:
-    void AddListToDoImportanti(Nota *nota);
+    string nomeLista;
 };
 
 

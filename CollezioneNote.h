@@ -8,15 +8,21 @@
 #include "Nota.h"
 #include "list"
 #include "iostream"
+#include "Subject.h"
 
 using namespace std;
 
-class CollezioneNote {
+class CollezioneNote: public Subject {
+public:
+    CollezioneNote(string nomeLista){ //costruttore che assegna un nome alla lista
+        this->nomeLista=nomeLista;}
+
+    void AddListToDo(Nota *nota);
+    virtual ~CollezioneNote();
+
 private:
     list<Nota *> listaToDo;
-
-public:
-    void AddListToDo(Nota *nota);
+    string nomeLista;
 };
 
 
