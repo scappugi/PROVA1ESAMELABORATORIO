@@ -6,8 +6,15 @@
 #define PROVA1ESAMELABORATORIO_COLLEZIONENOTEIMPORTANTI_H
 
 
-class CollezioneNoteImportanti {
+#include "Nota.h"
+#include "list"
 
+class CollezioneNoteImportanti {
+private:
+    list<Nota *> listaToDoImportanti;
+
+public:
+    void AddListToDoImportanti(Nota *nota);
 };
 
 
