@@ -9,7 +9,7 @@
 class Observer {
 public:
     virtual ~Observer(); //distruttore virtuale
-    virtual void update() = 0;
+    virtual void update(int size) = 0; //inserisco dimensione attuale della lista come parametro di update
     virtual void attach() = 0;
     virtual void detach() = 0;
 
