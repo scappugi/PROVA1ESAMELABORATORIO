@@ -1,0 +1,14 @@
+//
+// Created by simon on 01/12/2022.
+//
+
+#ifndef PROVA1ESAMELABORATORIO_NOTA_H
+#define PROVA1ESAMELABORATORIO_NOTA_H
+
+
+class Nota {
+
+};
+
+
+#endif //PROVA1ESAMELABORATORIO_NOTA_H
