@@ -6,8 +6,13 @@
 #define PROVA1ESAMELABORATORIO_SUBJECT_H
 
 
-class Subject {
+#include "Observer.h"
 
+class Subject {
+    virtual void subscribe(Observer *o) = 0;
+    virtual void unsubscribe(Observer *o) = 0;
+    virtual void notify() = 0;
+    virtual ~Subject();
 };
 
 
