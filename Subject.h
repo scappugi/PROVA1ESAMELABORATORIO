@@ -1,0 +1,14 @@
+//
+// Created by simon on 01/12/2022.
+//
+
+#ifndef PROVA1ESAMELABORATORIO_SUBJECT_H
+#define PROVA1ESAMELABORATORIO_SUBJECT_H
+
+
+class Subject {
+
+};
+
+
+#endif //PROVA1ESAMELABORATORIO_SUBJECT_H

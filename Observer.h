@@ -1,0 +1,14 @@
+//
+// Created by simon on 01/12/2022.
+//
+
+#ifndef PROVA1ESAMELABORATORIO_OBSERVER_H
+#define PROVA1ESAMELABORATORIO_OBSERVER_H
+
+
+class Observer {
+
+};
+
+
+#endif //PROVA1ESAMELABORATORIO_OBSERVER_H
